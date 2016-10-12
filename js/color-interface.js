@@ -6,7 +6,6 @@ $(document).ready(function() {
     var hex = $('#input-color').val();
     var color = new Color(hex);
     color.getColorInfo();
-    $('#output').show();
   });
 
 
