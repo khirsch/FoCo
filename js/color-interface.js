@@ -1,4 +1,4 @@
-var Color = require('./../js/focolors.js').colorModule;
+var Color = require('./../js/color.js').colorModule;
 
 $(document).ready(function() {
   $('#title').click(function(event){
