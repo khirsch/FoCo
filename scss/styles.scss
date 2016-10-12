@@ -1,0 +1,9 @@
+$color-scheme-primary : rebeccapurple;
+$color-scheme-secondary : peachpuff;
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: $color-scheme-primary;
+  color: $color-scheme-secondary;
+}
