@@ -10,6 +10,7 @@ var lib = require('bower-files')();
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var foaas = require('foaas-client');
 
 var lib = require('bower-files')({
   "overrides":{
