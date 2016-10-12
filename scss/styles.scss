@@ -1,4 +1,4 @@
-$color-scheme-primary : rebeccapurple;
+$color-scheme-primary : teal;
 $color-scheme-secondary : black;
 
 @font-face {
@@ -24,14 +24,8 @@ img {
 }
 
 .inner-box {
-  margin: 1rem;
-  border: 1px solid fuchsia;
-  .left{
-    margin-right: 0.5rem;
-  }
-  .right{
-    margin-left: 0.5rem;
-  }
+  margin: 0rem !important;
+  border: 1px solid black;
 }
 
 .jumbotron {
@@ -58,4 +52,18 @@ img {
 
 .footer{
   background-color: white;
+}
+
+.btn, .btn:focus, .btn:active {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+#output {
+  display: none;
 }

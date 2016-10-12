@@ -1,9 +1,14 @@
 var Color = require('./../js/color.js').colorModule;
 
 $(document).ready(function() {
-  $('#title').click(function(event){
+  $('#input').submit(function(event){
     event.preventDefault();
-    $('#hidden').toggle();
+    var hex = $('#input-color').val();
+    var color = new Color(hex);
+    color.getColorInfo();
+    $('#output').show();
   });
-  
+
+
+
 });
