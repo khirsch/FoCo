@@ -26,7 +26,7 @@ Color.prototype.getColorInfo = function(){
     }
     else {
       $('#output').hide();
-      alert("No entry for this color at COLOURlovers!");
+      alert("Sorry, there is no entry for this color in the COLOURlovers database.");
     }
   });
 };
