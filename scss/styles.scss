@@ -1,9 +1,48 @@
 $color-scheme-primary : rebeccapurple;
-$color-scheme-secondary : peachpuff;
+$color-scheme-secondary : black;
+
+@font-face {
+  font-family: KBPlanetEarth, Varela Round;
+  src: url('./../fonts/KBPlanetEarth.ttf') format('ttf'),
+       url('./../fonts/VarelaRound-Regular.ttf') format('ttf');
+}
 
 body {
-  margin: 0 auto;
-  max-width: 800px;
   background-color: $color-scheme-primary;
   color: $color-scheme-secondary;
+  font-family: 'Varela Round';
+}
+
+img {
+  width: auto;
+  height: 4.7rem;
+}
+
+.inner-box {
+  margin: 1rem;
+  border: 1px solid fuchsia;
+  .left{
+    margin-right: 0.5rem;
+  }
+  .right{
+    margin-left: 0.5rem;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+  font-family: KBPlanetEarth;
+  background-color: white;
+  h1{
+    font-size: 8rem;
+  }
+}
+
+#input-color{
+  width: 100%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  padding: 0;
+
 }
