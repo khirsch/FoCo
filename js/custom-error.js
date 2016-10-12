@@ -4,7 +4,7 @@ function CustomError() {
 
 CustomError.prototype.test = function(){
   $.ajax({
-    url: 'http://foaas.com/fascinating/' + 'Katrina&Zack',
+    url: 'http://foaas.com/fascinating/' + 'KatrinaAndZack',
     dataType: "json",
     method: "get"
   }).then(function(response){
