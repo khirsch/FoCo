@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
@@ -8,12 +9,12 @@
     <title>Colors!</title>
   </head>
   <body>
-    <div class="jumbotron">
+    <div class="jumbotron navbar-fixed-top">
       <div class="container">
         <h1>F<img src="img/love.svg">C<img src="img/love.svg"></h1>
       </div>
     </div>
-    <div class="container">
+    <div id="main" class="container">
       <div class="row">
         <!--Info-->
         <div class="col col-xs-12">
@@ -28,12 +29,10 @@
           <!--Input-->
           <div class="inner-box left">
             <form>
-              <label for="color">Pick a color!</label>
-              <input type="text" id="color" name="color" value="#123456" />
+              <label for="input-color">Pick a color!</label>
+              <input type="color" id="input-color" name="input-color" value="#8888FF">
             </form>
-            <div id="colorpicker"></div>
-
-            </div>
+          </div>
         </div>
         <div class="col col-md-6">
           <!--Output-->
@@ -41,8 +40,7 @@
             <p>OUTPUT HERE</p>
           </div>
         </div>
-      </div>
-      <div class="row">
+      <div class="footer navbar-fixed-bottom">
         <!--Footer-->
         <div class="col col-xs-12">
           <div class="inner-box">
