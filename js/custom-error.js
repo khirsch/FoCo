@@ -15,7 +15,7 @@ CustomError.prototype.test = function(){
 
 CustomError.prototype.titleError = function(){
   $.ajax({
-    url: 'http://foaas.com/everything/FoCo',
+    url: 'http://foaas.com/sake/FoCo',
     dataType: "json",
     method: "get"
   }).then(function(response){
@@ -25,7 +25,7 @@ CustomError.prototype.titleError = function(){
 
 CustomError.prototype.descriptionError = function(){
   $.ajax({
-    url: 'http://foaas.com/donut/FoCo',
+    url: 'http://foaas.com/thanks/FoCo',
     dataType: "json",
     method: "get"
   }).then(function(response){
