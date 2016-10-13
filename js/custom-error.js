@@ -40,7 +40,6 @@ CustomError.prototype.DBError = function(){
     dataType: "json",
     method: "get"
   }).then(function(response){
-    // $('#output-error-flavor').addClass('error');
     $('#output-error-flavor').text(response.message);
   });
 };
