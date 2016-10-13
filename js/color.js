@@ -43,7 +43,6 @@ Color.prototype.getColorInfo = function(){
         flipper = true;
         errorGenerator.DBError("this");
       }
-
     }
   });
 };
