@@ -34,9 +34,9 @@ CustomError.prototype.descriptionError = function(){
   });
 };
 
-CustomError.prototype.DBError = function(){
+CustomError.prototype.DBError = function(route){
   $.ajax({
-    url: 'http://foaas.com/colors/FoCo',
+    url: 'http://foaas.com/' + route + '/FoCo',
     dataType: "json",
     method: "get"
   }).then(function(response){

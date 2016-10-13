@@ -1,5 +1,7 @@
 var CustomError = require('./../js/custom-error.js').customErrorModule;
 
+flipper = true;
+
 function Color(hex) {
   this.title = null;
   this.hex = hex;
@@ -9,6 +11,7 @@ function Color(hex) {
 
 Color.prototype.getColorInfo = function(){
   var errorGenerator = new CustomError();
+
   $.get('http://www.colourlovers.com/api/color/' + this.hex.substring(1) + '?format=json').then(function(response){
     if(response[0]){
       $('#color-hex').text(response[0].hex);
@@ -32,7 +35,15 @@ Color.prototype.getColorInfo = function(){
     else {
       $('#output').hide();
       $('#output-error').show();
-      errorGenerator.DBError();
+      if(flipper === true){
+        flipper = false;
+        errorGenerator.DBError("colors");
+      }
+      else {
+        flipper = true;
+        errorGenerator.DBError("this");
+      }
+
     }
   });
 };
