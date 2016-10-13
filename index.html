@@ -12,15 +12,16 @@
   <body>
     <div class="jumbotron navbar-fixed-top">
       <div class="container">
-        <h1>F<img src="img/love.svg" alt="heart-as-'o'">C<img src="img/love.svg" alt="heart-as-'o'"></h1>
+        <img src="img/logo.png" alt="FoCo Logo">
       </div>
     </div>
     <div id="main" class="container">
       <div class="row">
         <!--Info-->
         <div class="col col-xs-12">
-          <div class="inner-box">
-            <p>SITE DESCRIPTION HERE</p>
+          <div id="info" class="inner-box">
+            <p>Hello and welcome to FoCo! This is a web-based app that helps you find the name, hex, rgb, and description of any color in the COLOURlovers database.</p>
+            <p><a href="https://github.com/khirsch/FoCo">-> View on Github</a></p>
           </div>
         </div>
       </div>
@@ -29,37 +30,41 @@
         <div class="col col-md-6">
           <!--Input-->
           <div class="inner-box left">
+            <img id="color-img" src="img/color.svg" alt="Color Picker Icon">
             <form id="input">
-              <label for="input-color">Pick a color!</label>
-              <input type="color" id="input-color" name="input-color">
+              <label for="input-color">Pick a color:</label>
+              <input type="color" id="input-color" name="input-color" value="#A7061A">
               <button class="btn" type="submit">Get Info</button>
             </form>
           </div>
         </div>
         <div class="col col-md-6">
           <!--Output-->
-          <div id="output" class="inner-box right">
-            <p>Name: <span id="color-title"></span></p>
-            <p>Hex: <span id="color-hex"></span></p>
-            <p>RGB: <span id="color-rgb"></span></p>
-            <p>Description: <span id="color-description"></span></p>
-          </div>
-          <div id="output-error" class="inner-box right">
-            <p>
-              Sorry, there is no entry for that color in the COLOURlovers database.
-            </p>
-            <p>
-              <span id="output-error-flavor"></span>
-            </p>
+          <div class="inner-box right">
+            <img id="info-img" src="img/info.svg" alt="Color Info Icon">
+
+            <div id="output" hidden>
+              <p class="output-label">Name:<br><span id="color-title"></span></p>
+              <p class="output-label">Hex:<br><span id="color-hex"></span></p>
+              <p class="output-label">RGB:<br><span id="color-rgb"></span></p>
+              <p class="output-label">Description:<br><span id="color-description"></span></p>
+            </div>
+
+            <div id="output-error" class="inner-box right">
+              <p>
+                Sorry, there is no entry for that color.
+              </p>
+              <p>
+                <span id="output-error-flavor" class="error">Fuck colors.</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="footer navbar-fixed-bottom">
         <!--Footer-->
         <div class="col col-xs-12">
-          <div class="inner-box">
-            <p>FOOTER HERE</p>
-          </div>
+          <p id="copyright">© 2016 Katrina Hirsch & Zachary Matthewstearn</p>
         </div>
       </div>
     </div>

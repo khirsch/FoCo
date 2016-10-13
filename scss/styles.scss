@@ -1,39 +1,55 @@
-$color-scheme-primary : teal;
+$color-scheme-primary : white;
 $color-scheme-secondary : black;
 
 @font-face {
-  font-family: KBPlanetEarth, Varela Round;
-  src: url('./../fonts/KBPlanetEarth.ttf') format('ttf'),
-       url('./../fonts/VarelaRound-Regular.ttf') format('ttf');
+  font-family: Dosis;
+  src: url('./../fonts/Dosis')
 }
 
 body {
   background-color: $color-scheme-primary;
+  background: url("./../../img/background-image.gif") repeat;
   color: $color-scheme-secondary;
-  font-family: 'Varela Round';
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+
+body > .container {
+  width: 100% !important;
 }
 
 #main{
-  margin-top: 168px;
+  margin-top: 131px;
   margin-bottom: 55px;
 }
 
-img {
-  width: auto;
-  height: 4.7rem;
+.col {
+  background: transparent !important;
+  border: none;
 }
 
 .inner-box {
   margin: 0rem !important;
-  border: 1px solid black;
+  border: 2px solid black;
+  background: white !important;
+  text-align: center;
+  padding: 5%;
+}
+#output-error {
+  border: none;
+  min-height: 0;
+  padding: 20% 25% 0;
 }
 
 .jumbotron {
   text-align: center;
-  font-family: KBPlanetEarth;
-  background-color: white;
+  background-color: black;
   padding: 1rem 0;
   z-index: 1000;
+  margin-bottom: 0;
   h1{
     font-size: 8rem;
 
@@ -45,33 +61,88 @@ img {
   margin: 0 auto;
   display: block;
   width: 50%;
-  height: 200px;
+  height: 150px;
   border: none;
   background: transparent;
 }
 
 .footer{
-  background-color: white;
+  background-color: black;
 }
 
 .btn, .btn:focus, .btn:active {
   background: #000000;
   color: #FFFFFF;
+  font-size: 2rem;
+  margin-top: 4%;
+  width: 40%;
 }
 
 .btn:hover {
-  background: #FFFFFF;
-  color: #000000;
+  background: #A7061A;
+  color: #FFFFFF;
 }
 
-#output {
-  display: none;
+#copyright {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .error {
-  color: red !important;
+  color: #c5071d !important;
 }
 
-#output-error {
-  display: none;
+#color-img {
+  width: 15%;
+  height: auto;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+#info-img {
+  width: 18%;
+  height: auto;
+  margin-bottom: 0.7%;
+  margin-top: 2%;
+}
+
+#info {
+  text-align: left;
+  padding: 2.5% 2.5% 1%;
+}
+
+a {
+  color: #A7061A;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left {
+  height: 373px;
+}
+.right{
+  min-height: 373px;
+}
+
+
+.output-label {
+  font-weight: bold;
+  span{
+    font-weight: normal;
+  }
+}
+
+label {
+  margin-bottom: 2%;
+}
+
+.row{
+  margin: 0;
 }

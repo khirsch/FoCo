@@ -30,7 +30,7 @@ CustomError.prototype.descriptionError = function(){
     method: "get"
   }).then(function(response){
     $('#color-description').addClass('error');
-    $('#color-description').text("No description provided. " + response.message);
+    $('#color-description').text("No description. " + response.message);
   });
 };
 
@@ -40,7 +40,7 @@ CustomError.prototype.DBError = function(){
     dataType: "json",
     method: "get"
   }).then(function(response){
-    $('#output-error-flavor').addClass('error');
+    // $('#output-error-flavor').addClass('error');
     $('#output-error-flavor').text(response.message);
   });
 };
