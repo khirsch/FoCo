@@ -2,17 +2,6 @@ function CustomError() {
 
 }
 
-CustomError.prototype.test = function(){
-  $.ajax({
-    url: 'http://foaas.com/fascinating/FoCo',
-    dataType: "json",
-    method: "get"
-  }).then(function(response){
-    console.log(response.message);
-    console.log(response.subtitle);
-  });
-};
-
 CustomError.prototype.titleError = function(){
   $.ajax({
     url: 'http://foaas.com/sake/FoCo',
