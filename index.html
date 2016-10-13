@@ -4,9 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="build/css/vendor.css">
     <link href="css/bootstrap-equal-height-columns.css" rel="stylesheet">
+    <link rel="stylesheet" href="farbtastic/farbtastic.css" type="text/css" />
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+
+<script type="text/javascript" src="farbtastic/farbtastic.js"></script>
+
+    <script type="text/javascript"
+     src="build/js/app.js"></script>
+     <script type="text/javascript">
+
+      $(document).ready(function() {
+
+        $('#colorpicker').farbtastic('#color');
+
+      });
+
+    </script>
     <title>Colors!</title>
   </head>
   <body>
@@ -31,10 +45,11 @@
           <!--Input-->
           <div class="inner-box left">
             <img id="color-img" src="img/pantone.svg" alt="Color Picker Icon">
-            <form id="input">
-              <label for="input-color">Pick a color:</label>
-              <input type="color" id="input-color" name="input-color" value="#A7061A">
-              <button class="btn" type="submit">Get Info</button>
+            <form>
+              <label for="colorpicker">Pick a color:</label>
+              <div id="colorpicker"></div>
+              <!-- <button class="btn" type="submit">Get Info</button> -->
+              <input type="text" id="color" name="color" value="#123456" hidden>
             </form>
           </div>
         </div>
@@ -49,7 +64,6 @@
               <p class="output-label">RGB:<br><span id="color-rgb"></span></p>
               <p class="output-label">Description:<br><span id="color-description"></span></p>
             </div>
-
             <div id="output-error" class="inner-box right">
               <p>
                 Sorry, there is no entry for that color.

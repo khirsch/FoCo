@@ -47,6 +47,7 @@ label {
   background: #FFFFFF !important;
   text-align: center;
   padding: 5%;
+  overflow-wrap: break-word;
 }
 
 .jumbotron {
@@ -99,6 +100,11 @@ label {
 
 .row {
   margin: 0;
+}
+
+.farbtastic {
+  display: block;
+  margin: 2rem auto 0;
 }
 
 #main {
