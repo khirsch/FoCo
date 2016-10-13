@@ -9,8 +9,8 @@ $(document).ready(function() {
     color.getColorInfo();
 
 
-    var testError = new CustomError();
-    testError.test();
+    // var testError = new CustomError();
+    // testError.test();
 
   });
 
