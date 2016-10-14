@@ -7,21 +7,14 @@
     <link rel="stylesheet" href="farbtastic/farbtastic.css" type="text/css" />
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
-
-<script type="text/javascript" src="farbtastic/farbtastic.js"></script>
-
-    <script type="text/javascript"
-     src="build/js/app.js"></script>
-     <script type="text/javascript">
-
+    <script type="text/javascript" src="farbtastic/farbtastic.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <script type="text/javascript">
       $(document).ready(function() {
-
         $('#colorpicker').farbtastic('#color');
-
       });
-
     </script>
-    <title>Colors!</title>
+    <title>FoCo</title>
   </head>
   <body>
     <div class="jumbotron navbar-fixed-top">
@@ -31,7 +24,6 @@
     </div>
     <div id="main" class="container">
       <div class="row">
-        <!--Info-->
         <div class="col col-xs-12">
           <div id="info" class="inner-box">
             <p>Hello and welcome to Fuck Off Colors! FoCo is a web app that helps you find the name, hex, rgb, and description of any color in the <a href="http://www.colourlovers.com/" target="_blank">COLOURlovers</a> database. Error messages provided by <a href="http://foaas.com/" target="_blank">Fuck Off As A Service</a>.</p>
@@ -40,9 +32,7 @@
         </div>
       </div>
       <div class="row row-eq-height">
-        <!--Main Content-->
         <div class="col col-md-6">
-          <!--Input-->
           <div class="inner-box left">
             <img id="color-img" src="img/pantone.svg" alt="Color Picker Icon">
             <form>
@@ -53,10 +43,8 @@
           </div>
         </div>
         <div class="col col-md-6">
-          <!--Output-->
           <div class="inner-box right">
             <img id="info-img" src="img/info.svg" alt="Color Info Icon">
-
             <div id="output" hidden>
               <p class="output-label">Name:<br><span id="color-title"></span></p>
               <p class="output-label">Hex:<br><span id="color-hex"></span></p>
@@ -64,20 +52,15 @@
               <p class="output-label">Description:<br><span id="color-description"></span></p>
             </div>
             <div id="output-error" class="inner-box right">
-              <p>
-                Sorry, there is no entry for that color.
-              </p>
-              <p>
-                <span id="output-error-flavor" class="error">Fuck colors.</span>
-              </p>
+              <p>Sorry, there is no entry for that color.</p>
+              <p><span id="output-error-flavor" class="error">Fuck colors.</span></p>
             </div>
           </div>
         </div>
       </div>
       <div class="footer navbar-fixed-bottom">
-        <!--Footer-->
         <div class="col col-xs-12">
-          <p id="copyright">© 2016 Katrina Hirsch & Zachary Matthewstearn</p>
+          <p id="copyright">© 2016 Katrina Hirsch &amp; Zachary Matthewstearn</p>
         </div>
       </div>
     </div>
